@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>SearchQuery-Angular</h2>
+<app-search (search)="onSearch($event)"></app-search>
+
+<!-- "product is referencing property in app component and is setting to "products" to be passed to down to child component " -->
+  <app-list [products]="products"></app-list>
+
+</div>

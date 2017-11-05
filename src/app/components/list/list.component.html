@@ -1,0 +1,8 @@
+<h3>{{ header }}</h3>
+<div class="list-group">
+  <!-- looping through products from the component then changing it to product  -->
+  <div class="list-group-item" *ngFor="let product of products">
+    <!-- passing the newly stated product to child component -->
+    <app-card [product]="product"></app-card>
+  </div>
+</div>
